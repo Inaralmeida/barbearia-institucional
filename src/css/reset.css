@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&family=Monda:wght@400;700&family=Montserrat:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --primaria: #FFB200;
+    --secundaria:  #FDEBB1;
+    --branco:  #DADCE0;
+    --cinza:  #C4C4C4;
+    --preto:  #101010;
+    --cinza-bg:  #252525;
+    --monda: 'Monda', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --jura: 'Jura', sans-serif;
+}
+
+input, button, button{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}

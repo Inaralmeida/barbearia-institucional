@@ -97,16 +97,16 @@ body {
   justify-content: space-around;
 }
 
-.home-section-filosofia > h2{
-    font-family: var(--jura);
-    color: var(--branco);
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 71px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
+.home-section-filosofia > h2 {
+  font-family: var(--jura);
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .filosofia-cards {
@@ -139,4 +139,86 @@ body {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
+}
+
+.home-section-diferenciais {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-section-diferenciais > h2 {
+  font-family: var(--jura);
+  color: var(--primaria);
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.diferenciais-sections {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.diferenciais-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.diferenciais-section > article {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diferenciais-section > img{
+    width: 40%;
+    transition: all .3s;
+}
+.diferenciais-section > img:hover{
+    transform: scale(1.05);
+}
+
+.diferenciais-section > article > h3 {
+  font-family: var(--monda);
+  color: var(--secundaria);
+  font-size: 30px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+
+}
+.diferenciais-section > article > p{
+  font-family: var(--montserrat);
+  color: var(--branco);
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.diferenciais-section > .left {
+  order: 1;
+}
+.diferenciais-section > .rigth {
+  order: 2;
 }

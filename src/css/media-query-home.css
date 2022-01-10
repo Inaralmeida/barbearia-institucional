@@ -28,6 +28,14 @@
     font-size: 20px;
     line-height: 27px;
   }
+  .footer-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+
+  }
 }
 @media screen and (max-width: 775px) {
   .banner-home > h1 {
@@ -47,6 +55,22 @@
   }
   .estatisticas-card-article > small {
     font-size: 20px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .footer-infos {
+    width: 100%;
+  }
+  .footer-info>img{
+    display: none;
+  }
+  .footer-redes-sociais{
+    width: 100%;
+    height: 30px;
   }
 }
 @media screen and (max-width: 670px) {
@@ -178,5 +202,24 @@
       "img5"
       "img3"
       "img3";
+  }
+  .footer-infos {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .footer-info{
+    width: 100%;
+    text-align: center;
+  }
+  .footer-redes-sociais{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
   }
 }

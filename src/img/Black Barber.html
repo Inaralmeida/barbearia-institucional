@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="http://127.0.0.1:5501/src/img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Black Barber_files/reset.css">
+    <link rel="stylesheet" href="./Black Barber_files/home.css">
+    <link rel="stylesheet" href="./Black Barber_files/media-query-global.css">
+    <link rel="stylesheet" href="./Black Barber_files/media-query-home.css">
+    <title>Black Barber</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <header class="header-home">
+      <p>BLACK BARBER</p>
+      <nav id="nav-header">
+        <button id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" class="btn-menu-responsivo">
+          <span class="toggle-menu"></span>
+        </button>
+        <ul class="header-menu">
+          <li><a class="header-home-nav-a" href="http://127.0.0.1:5501/index.html">HOME</a></li>
+          <li><a class="header-home-nav-a" href="http://127.0.0.1:5501/index.html">SERVIÇOS</a></li>
+          <li><a class="header-home-nav-a" href="http://127.0.0.1:5501/index.html">CONTATO</a></li>
+          <li><a class="header-home-nav-a" href="http://127.0.0.1:5501/index.html">BARBEIROS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-home">
+        <section class="home-section-banner">
+            <div class="banner-home">
+                <h1>BLACK BARBER</h1>
+                <p>Excelência, tradição e resistência</p>
+            </div>
+        </section>
+        <section class="home-section-filosofia" id="filosofia">
+            <h2>NOSSA FILOSOFIA</h2>
+            <div class="filosofia-cards">
+                <div class="card">
+                    <img src="./Black Barber_files/coroa.svg" alt="coroa">
+                    <h3>EXCELÊNCIA</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur atque sed eveniet illum consequatur et repudiandae veritatis voluptates aspernatur rerum, repellendus odio explicabo fuga exercitationem architecto hic in, sint pariatur.</p>
+                </div>
+            </div>
+        </section>
+        <section class="home-section-diferenciais"></section>
+        <section class="home-section-estatisticas"></section>
+        <section class="home-section-trabalho"></section>
+    </main>
+    <script src="./Black Barber_files/jquery-3.6.0.min.js"></script>
+    <script src="./Black Barber_files/home.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

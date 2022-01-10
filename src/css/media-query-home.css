@@ -1,9 +1,21 @@
-@media screen and (max-width: 1051px) {
+@media screen and (max-width: 1100px) {
   .banner-home > h1 {
     font-size: 60px;
   }
   .banner-home > p {
     font-size: 15px;
+  }
+  .home-section-filosofia > h2{
+      font-size: 50px;
+      line-height: 50px;
+  }
+  .filosofia-card > h3{
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .filosofia-card > p{
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 775px) {
@@ -17,6 +29,25 @@
     font-size: 40px;
     line-height: 40px;
   }
+  .home-section-filosofia{
+      height: auto;
+  }
+  .filosofia-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.filosofia-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+.filosofia-card > img{
+    width: 50px;
+}
 }
 @media screen and (max-width: 570px) {
   .home-section-banner {
@@ -40,4 +71,17 @@
   .banner-home > p {
     font-size: 15px;
   }
+
+  .home-section-filosofia > h2{
+      font-size: 30px;
+  }
+
+  .filosofia-card > h3{
+      font-size: 20px;
+  }
+  .filosofia-card > p{
+      font-size: 12px;
+      line-height: 15px;
+  }
+  
 }

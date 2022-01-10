@@ -16,6 +16,7 @@ body {
   font-family: var(--monda);
   color: var(--branco);
   position: fixed;
+  z-index: 50;
 }
 #nav-header {
   width: 70%;
@@ -96,7 +97,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 .home-section-filosofia > h2 {
   font-family: var(--jura);
   color: var(--branco);
@@ -108,7 +108,6 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
 .filosofia-cards {
   width: 100%;
   height: 80%;
@@ -116,14 +115,12 @@ body {
   align-items: baseline;
   justify-content: space-around;
 }
-
 .filosofia-card {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .filosofia-card > h3 {
   font-family: var(--monda);
   color: var(--primaria);
@@ -140,7 +137,7 @@ body {
   line-height: 25px;
   text-align: center;
 }
-
+/* SECTION-DIFERENCIAIS */
 .home-section-diferenciais {
   width: 100%;
   min-height: 100vh;
@@ -167,7 +164,6 @@ body {
   flex-direction: column;
   margin-top: 100px;
 }
-
 .diferenciais-section {
   width: 100%;
   height: auto;
@@ -176,7 +172,6 @@ body {
   justify-content: space-around;
   margin: 50px 0;
 }
-
 .diferenciais-section > article {
   width: 60%;
   display: flex;
@@ -184,15 +179,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.diferenciais-section > img{
-    width: 40%;
-    transition: all .3s;
+.diferenciais-section > img {
+  width: 40%;
+  transition: all 0.3s;
 }
-.diferenciais-section > img:hover{
-    transform: scale(1.05);
+.diferenciais-section > img:hover {
+  transform: scale(1.05);
 }
-
 .diferenciais-section > article > h3 {
   font-family: var(--monda);
   color: var(--secundaria);
@@ -203,9 +196,8 @@ body {
   text-align: center;
   letter-spacing: 0.055em;
   text-transform: uppercase;
-
 }
-.diferenciais-section > article > p{
+.diferenciais-section > article > p {
   font-family: var(--montserrat);
   color: var(--branco);
   font-weight: 300;
@@ -215,10 +207,71 @@ body {
   align-items: center;
   text-align: center;
 }
-
 .diferenciais-section > .left {
   order: 1;
 }
 .diferenciais-section > .rigth {
   order: 2;
+}
+/* SECTION-ESTATISTICAS */
+.home-section-estatisticas {
+  width: 100%;
+  height: 570px;
+  background-color: var(--cinza-bg);
+  background-image: url(/src/img/decoração.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.estatisticas-opacidade {
+  width: 100%;
+  height: 100%;
+  background-color: #060606af;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.estatisticas-card {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.estatisticas-container-img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid var(--secundaria);
+  transition: 0.3s;
+}
+.estatisticas-container-img:hover {
+  transform: rotate(360deg);
+  background-color: var(--preto);
+  border: 10px solid var(--preto);
+}
+
+.estatisticas-card-article{
+    text-align: center;
+}
+.estatisticas-card-article > p {
+  color: var(--secundaria);
+  font-family: var(--jura);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.estatisticas-card-article > small {
+  color: var(--branco);
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
 }

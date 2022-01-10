@@ -42,6 +42,12 @@
     font-size: 15px;
     line-height: 22px;
   }
+  .estatisticas-card-article > p {
+    font-size: 40px;
+  }
+  .estatisticas-card-article > small {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 670px) {
   .banner-home > h1 {
@@ -80,7 +86,8 @@
   .diferenciais-section > .rigth {
     order: 1;
   }
-  .diferenciais-section > img, .diferenciais-section > article {
+  .diferenciais-section > img,
+  .diferenciais-section > article {
     width: 80%;
   }
   .diferenciais-section > article > h3 {
@@ -114,7 +121,8 @@
   .banner-home > p {
     font-size: 15px;
   }
-  .home-section-filosofia > h2, .home-section-diferenciais > h2 {
+  .home-section-filosofia > h2,
+  .home-section-diferenciais > h2 {
     font-size: 30px;
     margin-bottom: 1px;
   }
@@ -128,9 +136,33 @@
   .diferenciais-sections {
     margin-top: 10px;
   }
-  .diferenciais-section > img, .diferenciais-section > article {
+  .diferenciais-section > img,
+  .diferenciais-section > article {
     width: 90%;
     margin: 0;
     margin-bottom: 10px;
   }
+  .home-section-estatisticas {
+    height: auto;
+  }
+  .estatisticas-opacidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .estatisticas-card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .estatisticas-container-img {
+    width: 30%;
+}
+  .estatisticas-container-img > img {
+    width: 100%;
+}
+
 }

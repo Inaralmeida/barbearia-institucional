@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/src/img/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/home.css" />
+    <link rel="stylesheet" href="/src/css/media-query.css" />
     <title>Black Barber</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-home">
-        <p>BLACK BARBER</p>
-        <nav class="header-home-nav">
-            <a class="header-home-nav-a" href="/index.html">HOME</a>
-            <a class="header-home-nav-a" href="/index.html">SERVIÇOS</a>
-            <a class="header-home-nav-a" href="/index.html">CONTATO</a>
-            <a class="header-home-nav-a" href="/index.html">BARBEIROS</a>
-        </nav>
+      <p>BLACK BARBER</p>
+      <nav id="nav-header">
+        <button id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+        class="btn-menu-responsivo">
+          <span class="toggle-menu"></span>
+        </button>
+        <ul class="header-menu">
+          <li><a class="header-home-nav-a" href="/index.html">HOME</a></li>
+          <li><a class="header-home-nav-a" href="/index.html">SERVIÇOS</a></li>
+          <li><a class="header-home-nav-a" href="/index.html">CONTATO</a></li>
+          <li><a class="header-home-nav-a" href="/index.html">BARBEIROS</a></li>
+        </ul>
+      </nav>
     </header>
-    <script src="/src/Js/main.js"></script>
-</body>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/Js/main/home.js"></script>
+  </body>
 </html>

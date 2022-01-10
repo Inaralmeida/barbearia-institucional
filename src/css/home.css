@@ -256,8 +256,8 @@ body {
   border: 10px solid var(--preto);
 }
 
-.estatisticas-card-article{
-    text-align: center;
+.estatisticas-card-article {
+  text-align: center;
 }
 .estatisticas-card-article > p {
   color: var(--secundaria);
@@ -274,4 +274,49 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 27px;
+}
+.home-section-trabalho {
+  width: 100%;
+  height: auto;
+  background-color: var(--cinza-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-section-trabalho > h2 {
+  font-family: var(--jura);
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 71px;
+}
+.home-trabalho-grid{
+    margin: 15px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px 1%;
+    grid-template-areas: 
+    'img1 img2 img3'
+    'img4 img5 img3';
+}
+.img-1{
+    grid-area: img1;
+}
+.img-2{
+    grid-area: img2;
+}
+.img-3{
+    grid-area: img3;
+}
+.img-4{
+    grid-area: img4;
+}
+.img-5{
+    grid-area: img5;
+}
+
+.home-trabalho-grid > img{
+    width: 85%;
 }

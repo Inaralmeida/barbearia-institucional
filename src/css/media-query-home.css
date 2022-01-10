@@ -160,9 +160,23 @@
   }
   .estatisticas-container-img {
     width: 30%;
-}
+  }
   .estatisticas-container-img > img {
     width: 100%;
-}
-
+  }
+  .home-trabalho-grid {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 300px);
+    gap: 10px;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img4"
+      "img5"
+      "img3"
+      "img3";
+  }
 }

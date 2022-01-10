@@ -55,7 +55,7 @@ body {
   justify-content: flex-start;
   padding-left: 10vh;
   background-color: var(--preto);
-  background-image: url(/src/img/banner-home.svg);
+  background-image: url(/src/img/banne-medium.jpg);
   background-size: cover;
   background-position: center;
 }
